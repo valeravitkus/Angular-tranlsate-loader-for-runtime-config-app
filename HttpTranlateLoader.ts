@@ -1,8 +1,9 @@
-import {Injectable, Injector} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {TranslateLoader} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs/Observable';
 import {RuntimeConfigLoaderService} from '../runtime-config-loader/runtime-config-loader-lib.service';
+import {Observable} from 'rxjs/Observable';
+
 
 @Injectable()
 export class TranslateBrowserLoader implements TranslateLoader {
