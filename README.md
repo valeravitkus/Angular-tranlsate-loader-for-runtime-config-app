@@ -2,7 +2,17 @@
 HttpTranslateLoader for runtime config Angular apps
 
 app.module.ts
-add to imports 
+
+add factory function after module import before AppModule class delcareted
+
+```
+export function createTranslateLoader(http: HttpClient, configLoader: RuntimeConfigLoaderService) {
+ return new TranslateBrowserLoader(http, configLoader);
+}
+
+```
+
+add to imports array
 
 ```
 TranslateModule.forRoot({
