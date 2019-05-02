@@ -1,2 +1,2 @@
 # Angular-tranlsate-loader-for-runtime-config-app
-Http 
+HttpTranlateLoader for runtime config angualr apps
